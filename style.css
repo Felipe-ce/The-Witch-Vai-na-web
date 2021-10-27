@@ -1,8 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
 
-
-
 :root {
   --cor-principal: #FF1314;
   --font: 'Montserrat', sans-serif
+}
+
+/* Reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+}
+body{
+  font-family: var(--font);
+}
+
+/* Estilos */
+.container-bg{
+  background-image: url("/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header img{
+  max-width: 50px;
+}
+.header h1{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-top: 40px;
+  letter-spacing: .06rem;
+}
+.header li{
+  font-family: var(--font);
+  display: inline;
+  margin-top: 50px;
+}
+.header li + li{
+  margin-left: 1rem;
+}
+.header ul{
+  float: right;
+  margin-top: 40px;
+}
+.header a{
+  padding: .25rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: var(--font);
+  letter-spacing: .06rem;
+  transition: all  100ms ease-in;
+}
+.header a:hover{
+  font-weight: bold;
+}
+
+
+.intro > img{
+  margin: 0 auto;
+}
+.intro{
+  position: relative;
+}
+.intro-action{
+  position: absolute;
+  top: 45%;
+  left: 35%;
+}
+.botao{
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .06rem;
+  padding: 1rem;
+  background: var(--cor-principal);
+  border-radius: .25rem;
+  width: 300px; 
+  transition: background 200ms ease-in;
+}
+.botao:hover{
+  background: rgb(182, 3, 3);
 }

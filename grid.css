@@ -1,0 +1,81 @@
+/* 
+  Este é um grid de 12 colunas,
+  cada coluna tera cerca de 8.33% do tamanho do container, que neste caso é 1200px,
+*/
+
+.container {
+  /* Tamanho Maximo do container */
+  max-width: 1440px;
+  /* Centralizar o container ao meio */
+  margin: 0 auto;
+}
+
+.container::after,
+.container::before {
+  /* isso vai "injetar" conteúdo após os elementos com float e “limpar” a flutuação. */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  /* Adicionando margin left e right, para os itens não ficarem grudados */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos e elementos em linha irão se posicionar ao seu redor. */
+  float: left;
+  display: block;
+  /* Estou dando um tamanho minino a cada classe grid */
+  min-height: 1px;
+}
+
+.grid-1 {
+  /* grid com tamanho de 1 coluna, de 8.333% do valor do container */
+  /* este -20px é referente as margens left e right colcoars a cima*/
+  width: calc(8.333% - 20px);
+}
+.grid-2 {
+  /* grid com tamanho de 2 coluna, de 8.333% do valor do container..... e assim por diante */
+  width: calc(16.666% - 20px);
+}
+.grid-3 {
+  width: calc(25% - 20px);
+}
+.grid-4 {
+  width: calc(33.333% - 20px);
+}
+.grid-5 {
+  width: calc(41.666% - 20px);
+}
+.grid-6 {
+  width: calc(50% - 20px);
+}
+.grid-7 {
+  width: calc(58.333% - 20px);
+}
+.grid-8 {
+  width: calc(66.666% - 20px);
+}
+.grid-9 {
+  width: calc(75% - 20px);
+}
+.grid-10 {
+  width: calc(83.333% - 20px);
+}
+.grid-11 {
+  width: calc(91.666% - 20px);
+}
+.grid-12 {
+  width: calc(100% - 20px);
+}

@@ -5,33 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="grid.css">
   <link rel="stylesheet" href="style.css">
 
   <title>The Witch</title>
 </head>
 
 <body>
-  <header>
-    <div>
-      <img src="img/simbol.png" alt="Witch bg">
-      <h1>Projeto Vermelho</h1>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#">universo</a></li>
-        <li><a href="#">atores</a></li>
-        <li><a href="#">temporadas</a></li>
-        <li><a href="#">temporadas</a></li>
-      </ul>
-    </div>
-    <main>
-      <section>
-        <img src="img/witcher.png" alt="witcher">
-        <img src="img/thewitcher.png" alt="witcher simbol">
-        <a href="#">Assista agora</a>
-      </section>
-    </main>
-  </header>
+  <div class="container-bg">
+    <header class="header container">
+      <div class="header-logo grid-5">
+        <img class="grid-4" src="img/simbol.png" alt="Witch bg">
+        <h1 class="grid-6">Projeto Vermelho</h1>
+      </div>
+      <div class="grid-7">
+        <ul>
+          <li><a href="#">universo</a></li>
+          <li><a href="#">atores</a></li>
+          <li><a href="#">temporadas</a></li>
+          <li><a href="#">temporadas</a></li>
+        </ul>
+      </div>
+    </header>
+      <main class="container">
+        <section class="grid-12 intro">
+            <img src="img/witcher.png" alt="witcher">
+          <div class="intro-action">
+            <img src="img/thewitcher.png" alt="witcher simbol">
+            <a class="botao" href="#">Assista agora</a>
+
+          </div>
+        </section>
+      </main>
+  </div>
 </body>
 
 </html>
